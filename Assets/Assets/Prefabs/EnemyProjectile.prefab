@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -2789005205444449031}
   - component: {fileID: -2196836692386990425}
   m_Layer: 0
-  m_Name: Projectile
+  m_Name: EnemyProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.3822644, g: 1, b: 0.3820755, a: 1}
+  m_Color: {r: 1, g: 0.4476292, b: 0.4198113, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -107,10 +107,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6a2c8bcb4e7414f925f2ebc84d2356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
-  m_ProjectileSpeed: 20
+  m_ProjectileSpeed: 10
   m_Lifetime: 1
   m_Damage: 25
-  m_IsEnemyProjectile: 0
+  m_IsEnemyProjectile: 1
 --- !u!50 &-2789005205444449031
 Rigidbody2D:
   serializedVersion: 5

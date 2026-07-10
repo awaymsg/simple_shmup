@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     private GameObject m_Projectile;
     [SerializeField]
     private float m_MoveSpeed = 1.0f;
+    [SerializeField]
+    private float m_Health = 100f;
 
     private static Vector2 m_MoveInput;
     private GameObject m_ProjectileGameObject;
@@ -39,6 +41,16 @@ public class PlayerController : MonoBehaviour
         {
             m_ProjectileGameObject = Instantiate(m_Projectile);
             m_ProjectileGameObject.transform.position = transform.position;
+        }
+    }
+
+    public void TakeDamage(float dmg)
+    {
+        m_Health -= dmg;
+
+        if (m_Health <= 0f)
+        {
+            Destroy(gameObject);
         }
     }
 }
